@@ -18,7 +18,7 @@ This is a standalone HTML project built with classic `<form>` elements and rich,
 
 
 ## 📸 Screenshot Preview 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0fe09f97-bc9d-42ba-a6b4-495b0f26c755" />
+<img width="1898" height="820" alt="image" src="https://github.com/user-attachments/assets/3071e372-9315-488c-9511-e57fa30acef0" />
 <img width="1898" height="870" alt="image" src="https://github.com/user-attachments/assets/a994b972-6697-4545-99d0-6b9e859d8cc6" />
 <img width="1901" height="508" alt="image" src="https://github.com/user-attachments/assets/b66a6a23-3003-410d-b0bb-69e3406599c5" />
 
