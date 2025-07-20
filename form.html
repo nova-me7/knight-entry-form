@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Scroll of Valor </title>
+    
+
+</head>
+
+<body>
+    <div>
+        <!-- Introduction -->
+
+        <h2> Hello Andre..</h2>
+        <h4> Welcome to the Land of Mystic Knights</h4>
+        <i> By royal decree of the High King, all brave souls seeking knighthood must now present themselves for
+            honorable enlistment. <br>Swear thy sword and fill this scroll! </i>
+        <br>
+        <br>
+
+
+        <form action="form.php">
+
+            <!-- Basic Information -->
+            <h3> Basic information</h3>
+
+            <label for="fullknightname"> <b> Full Knight Name: </b> </label>
+            <input type="text" placeholder="Full Knight Name" name="fullknightname" id="fullknightname"> <br>
+
+
+            <label for="title"> <b> Title: </b></label>
+            <input type="text" placeholder="Title" name="title" id="title"><br>
+
+
+            <label for="clanname"> <b> Clan Name: </b></label>
+            <input type="text" placeholder="Clan name" name="clanname" id="clanname">
+            <br>
+
+
+            <label for="age"> <b> Age of Valor: </b> </label>
+            <input type="number" min="0" id="age" name="age"><br>
+
+
+            <label for="origin"> <b> Realm of Origin: </b> </label>
+            <select name="origin" id="origin">
+                <option value="" disabled selected> Specify your mythical homeland </option>
+                <option value="the_northern_waste"> The Northern Waste </option>
+                <option value="elvenwoods"> Elvenwoods </option>
+                <option value="dragonspire"> Dragonspire </option>
+                <option value="frosthelm"> Frosthelm </option>
+                <option value="the_ashen_coast"> The Ashen Coast </option>
+            </select>
+
+            <br>
+
+
+            <label for="species"> <b> Species: </b></label>
+            <select name="species" id="species">
+                <option value="" disabled selected> Specify your species </option>
+                <option value="human"> Human </option>
+                <option value="elf"> Elf </option>
+                <option value="dwarf"> Dwarf </option>
+                <option value="orc"> Orc </option>
+                <option value="goblin"> Goblin </option>
+                <option value="troll"> Troll </option>
+                <option value="gnome"> Gnome </option>
+            </select>
+
+            <hr>
+
+            <h3> Combat Details </h3>
+
+            <label for="weapon"> <b> Preferred Weapon of Honor: </b> </label>
+            <select name="weapon" id="weapon">
+                <option value="" disabled selected> Specify your weapon </option>
+                <option value="sword"> Sword </option>
+                <option value="axe"> Axe </option>
+                <option value="magic_staff"> Magic Staff </option>
+                <option value="frying_pan"> Frying Pan </option>
+            </select>
+            <br>
+
+            <label for="experience"> <b> Years of Battle Experience: </b>
+                <input type="number" min="0" id="experience" name="experience"><br>
+            </label>
+
+            <label for="known_for"> <b> Known for: </b> </label>
+            <input type="text" id="known_for" name="known_for">
+            <br>
+
+            <label for="special_abilities"> <b> Special Abilities / Magic Powers: </b></label><br>
+            <textarea id="special_abilities" name="special_abilities" rows="4" cols="50"
+                placeholder="Describe your legendary skills here..."></textarea>
+            <br>
+
+            <label for="mount_choice"> <b> Mount of Choice: </b> </label>
+            <select name="mount_choice" id="mount_choice">
+                <option value="" disabled selected> Specify your ride </option>
+                <option value="horse"> Horse </option>
+                <option value="dragon"> Dragon </option>
+                <option value="giant_goat"> Giant Goat </option>
+                <option value="mechanical_griffin"> Mechanical Griffin </option>
+                <option value="frying_pan"> None (I run like wind) </option>
+            </select>
+            <br>
+            <hr>
+
+            <h3> Guild & Allegiances </h3>
+
+            <label for="allegiance"> <b> Allegiance: </b> </label>
+            <select name="allegiance" id="allegiance">
+                <option value="" disabled selected> Specify your Allegiance </option>
+                <option value="crown"> The Crown </option>
+                <option value="rebel"> The Rebel </option>
+                <option value="white_hawks"> White Hawks </option>
+                <option value="neutral"> Neutral </option>
+            </select>
+            <br>
+
+            <label for="guild_name"> <b> Guild Name: </b> </label>
+            <input type="text" placeholder="if any" id="guild_name"><br>
+
+            <label for="oaths"> <b> Sworn Oaths or Curses: </b> </label>
+            <input type="text" placeholder="if any" id="oaths"><br>
+            <hr>
+
+            <h3>Logistics</h3>
+
+            <label for="snacks"> <b> Preferred Battlefield Snack: </b> </label>
+            <input type="text" id="snacks" name="snacks"><br>
+
+            <label for="armor_size"> <b> Armor Size: </b> </label>
+            <select name="armor_size" id="armor_size">
+                <option value="" disabled selected> Specify your gear </option>
+                <option value="squire_slim"> Squire Slim </option>
+                <option value="knight_fit"> Knight Fit </option>
+                <option value="barbarian_bulk"> Barbarian Bulk </option>
+                <option value="custom"> Custom </option>
+            </select>
+            <br>
+
+            <p><b>Do you snore in camp?</b></p>
+
+            <input type="radio" id="snore_yes" name="snore" value="yes">
+            <label for="snore_yes">Yes</label><br>
+
+            <input type="radio" id="snore_no" name="snore" value="no">
+            <label for="snore_no">No</label><br>
+
+            <input type="radio" id="snore_dragons" name="snore" value="only_when_near_dragons">
+            <label for="snore_dragons">Only when near dragons</label><br>
+
+            <hr>
+            <p><strong>🧾 Oath of Service:</strong></p>
+
+            <input type="checkbox" id="oath1" name="oath[]" required>
+            <label for="oath1">I swear to defend the realm with honor and ridiculous bravery.</label><br>
+
+            <input type="checkbox" id="oath2" name="oath[]" >
+            <label for="oath2">I shall not poke my fellow knights in training.</label><br>
+
+            <input type="checkbox" id="oath3" name="oath[]" >
+            <label for="oath3">I will not drink the king's mead without permission (again).</label><br>
+
+            <input type="checkbox" id="oath4" name="oath[]" >
+            <label for="oath4">I agree to return borrowed swords... eventually.</label><br>
+
+            <hr>
+
+            <h3> Final Decree </h3>
+
+            <label for="address"> <b> Scroll-mail Address: </b></label><br>
+            <textarea id="address" name="address" rows="4" cols="50" placeholder="Type your address here.."></textarea>
+            <br>
+
+            <label for="signature"><b> Sign thy name in blood or ink: </b></label><br>
+            <input type="text" id="signature" name="signature" placeholder="e.g., Ser Knight the Brave"><br>
+            <br>
+            <hr>
+
+            <h3><i> Knight's Final Oath </i></h3>
+            <i> By signing this sacred scroll, I do solemnly swear upon my sword, my shield, and the slightly
+                uncomfortable chainmail I now wear, that I shall serve the realm with unwavering loyalty and
+                questionable decision-making. I pledge to protect the weak, battle the wicked, and never leave camp
+                without my helmet. <br> <br>
+
+                I vow to respect the Code of the Order, even if I don’t fully understand it, and to stand bravely in the
+                face of dragons, taxes, and poorly cooked battlefield stew. Should I fail in my duties, may I be haunted
+                by the ghosts of dishonored knights and cursed to forever polish rusty armor.
+
+                So swear I,The Royal Knight of the Crown, in ink... or blood... or whatever's handy.</i>
+            <br>
+            <br>
+
+            <!-- Final required agreement -->
+
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">I agree to the Sacred Oath and pledge my blade to the realm.</label>
+            <br>
+            <br>
+
+            <button type="submit">⚔️ Swear Thy Sword!</button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+        </form>
+
+    </div>
+</body>
+
+</html>
